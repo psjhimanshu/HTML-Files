@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="res"></h2>
+    <button onclick="date()">Date</button>
+    <button onclick="getfullyear()">getFullYear</button>
+    <button onclick="getmonth()">getMonth</button>
+    <button onclick="gethours()">getHours</button>
+    <button onclick="getminutes()">getMinute</button>
+    <button onclick="getmiliseconds()">getMilliseonds</button>
+    <button onclick="gettime()">getTime</button>
+    <button onclick="getday()">getDay</button>
+    
+</body>
+<script type="text/javascript">
+    var dt= new Date();
+    // var gfy= new getFullYear();
+    function date(){
+        document.getElementById('res').innerText=dt;
+    }
+    function getfullyear(){
+        document.getElementById('res').innerText=dt.getFullYear();
+    }
+    function getmonth(){
+        document.getElementById('res').innerText=dt.getMonth();
+    }
+    function gethours(){
+        document.getElementById('res').innerText=dt.getHours();
+    }
+    function getminutes(){
+        document.getElementById('res').innerText=dt.getMinutes();
+    }
+    function getmiliseconds(){
+        document.getElementById('res').innerText=dt.getMilliseconds();
+    }
+    function gettime(){
+        document.getElementById('res').innerText=dt.getTime();
+    }
+    function getday(){
+        document.getElementById('res').innerText=dt.getDay();
+    }
+</script>
+</html>

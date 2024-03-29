@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- <html lang="en"> -->
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" name="first" id="first" step="any"/>
+    <select id="opt">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">x</option>
+        <option value="/">/</option>
+    </select>
+    <input type="number" name="second" id="second" step="any"/>
+    <br/><br/>
+    <button onclick="cal()">Calculate</button>
+    <input type="text" name="" id="res" readonly=""/>
+
+    Name:<i id="result"></i>
+    <br/>
+    <button onclick="call()">Click here</button>
+</body>
+<script type="text/javascript">
+    function cal(){
+        var opr1=document.getElementById('first').value;
+        var opr2=document.getElementById('second').value;
+        var ope=document.getElementById('opt').value
+        // alert(ope);
+
+        if(ope=='+'){
+            var res=parseInt(opr1)+parseInt(opr2);
+        }
+        if(ope=='*'){
+            var res=parseInt(opr1)*parseInt(opr2);
+        }
+        if(ope=='*'){
+            var res=parseInt(opr1)*parseInt(opr2);
+        }
+        if(ope=='/'){
+            var res=parseInt(opr1)/parseInt(opr2);
+        }
+        document.getElementById('res').value=res;
+    }
+    function call(){
+        var name=prompt("enter your name","");
+        document.getElementById('result').innerHTML=name;
+    }
+</script>
+</html>
